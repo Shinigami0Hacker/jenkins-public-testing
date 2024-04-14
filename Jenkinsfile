@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  {
+  
     stages{
       stage('Clone'){
         git branch: 'main', url: 'https://github.com/Shinigami0Hacker/jenkins-public-testing' 
@@ -9,5 +9,5 @@ pipeline {
         sh 'python3 main.py'
       }
     }
-  }
+  
 }
